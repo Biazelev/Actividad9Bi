@@ -21,3 +21,34 @@ body{
 	background-color: #D8BFD8;
 	color: #8B008B;
 }
+
+.barra{
+	width: 30%;
+	height: 20px;
+	background-color: paleturquoise;
+	margin: 20px 0;
+	animation: loadbar 3s infinite;
+	border: 3px steelblue;
+}
+
+@keyframes loadbar {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 100%;
+	}
+}
+
+.card {
+	width: 350px;
+	text-align: center;
+	border: 3px solid darkgreen;
+	padding: 90px;
+	margin: 20px 0;
+	transition: transform 0.3s;
+}
+
+.card:hover {
+	transform: scale(1.1) rotate(10deg);
+}
